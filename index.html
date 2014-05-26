@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Climate Change Detector by solotsopa</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Climate Change Detector</h1>
+        <p>Climate Chnage Detector targeting the Arduino Yún board and Arduino IDE 1.5.6-r2</p>
+
+        <p class="view"><a href="https://github.com/solotsopa/ClimateChangeDetector">View the Project on GitHub <small>solotsopa/ClimateChangeDetector</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/solotsopa/ClimateChangeDetector/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/solotsopa/ClimateChangeDetector/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/solotsopa/ClimateChangeDetector">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a name="welcome-to-climate-change-detector" class="anchor" href="#welcome-to-climate-change-detector"><span class="octicon octicon-link"></span></a>Welcome to Climate Change Detector.</h3>
+
+<p>Climate Change Detector is a school project device that reads values from five sensors
+1. Rain Detector 
+2. Soil Moisture Sensor
+3. Humidity
+4. Temperature
+5. Photo Resistor</p>
+
+<p>...and saves the data into an SD card. This project is created for an Ecology class and it is detecting the climate change in a specific time.</p>
+
+<hr><h2>
+<a name="the-device" class="anchor" href="#the-device"><span class="octicon octicon-link"></span></a>The device</h2>
+
+<p><img src="https://raw.githubusercontent.com/solotsopa/ClimateChangeDetector/master/ClimateChangeDetector/images/2014-05-26%2023.18.00.jpg" alt="Device1"><img src="https://raw.githubusercontent.com/solotsopa/ClimateChangeDetector/master/ClimateChangeDetector/images/2014-05-26%2023.56.40.jpg" alt="Device2">
+For more pictures of the device click <a href="https://www.dropbox.com/sc/i2rn7snet4gc9v5/AACJ15deyablcTFKXZu64FE3a">here</a></p>
+
+<hr><h3>
+<a name="rain-detector" class="anchor" href="#rain-detector"><span class="octicon octicon-link"></span></a>Rain Detector</h3>
+
+<p><img src="https://raw.githubusercontent.com/solotsopa/ClimateChangeDetector/master/ClimateChangeDetector/images/rainD.jpg" alt="Rain Detector"><br><br>
+Rain Detector is a sensor that detects the raindrops. It can be used for all kinds of weather monitoring.
+Product introduction:
+1. the sensor USES the high quality FR - 04 double material, large area of 5.0 * 4.0 CM, treatment of nickel plating and surface, have fight oxidation, electrical conductivity, and life has more superior performance;
+2. the comparator output, signal clean, good waveform, driving ability is strong, for more than 15 ma;
+3. with potentiometer sensitivity adjustment;
+4. the working voltage of 3.3 V to 5 V
+5. the output format: digital switch output (0 and 1) and analog AO voltage output;
+6. has a fixed bolt hole, convenient installation
+7. small board PCB size: 3.2 cm x 1.4 cm
+8. the LM393, use of wide voltage comparator
+Function is introduced:
+Connected to 5 v power supply, power indicator, no water droplets on induction plate, the DO output high level, switch indicator light out, drop a drop of water on, the DO output for the low level, the switch light is lit,Brush away the water droplets, again to return to, the output high level...
+AO analog output, which can be connected to the microcontroller AD mouth detection drops of rainfall in the above size.
+DO TTL digital output also can connect to the single chip microcomputer detect whether there is rain.
+Connection mode:
+1. VCC: positive (3-5 v)
+2. GND: connect power anode
+3. DO: TTL switch signal output
+4. AO: analog signal output</p>
+
+<p><a href="http://www.ebay.com/itm/Humidity-Detection-Sensor-Module-Rain-Detection-for-Arduino-/121126110187?ssPageName=ADME:L:OU:GB:3160">Link</a></p>
+
+<h3>
+<a name="soil-moisture-sensor" class="anchor" href="#soil-moisture-sensor"><span class="octicon octicon-link"></span></a>Soil Moisture Sensor</h3>
+
+<p><img src="https://raw.githubusercontent.com/solotsopa/ClimateChangeDetector/master/ClimateChangeDetector/images/soilD.jpg" alt="Soil Moisture Sensor"><br><br>
+This is a simple water sensor can be used to detect soil moisture when the soil moisture deficit module outputs a high level, and vice versa output low. 
+1. Sensitivity adjustable the blue digital potentiometer adjustment
+2. Operating voltage 3.3V-5V 
+3. Module dual output mode, digital output, analog output more accurate. 
+4. With fixed bolt hole for easy installation 
+5. PCB size: 3cm * 1.6cm 
+6. Power indicator (red) and digital switching output indicator (green) 
+7. Comparator LM393 chip, stable</p>
+
+<p>Interface Description (4-wire) 
+1. VCC: .3 V-5V 
+2. GND: GND 
+3. DO: digital output interface (0 and 1) 
+4. AO: Analog Output Interface</p>
+
+<p>Instructions for use 
+1. Soil moisture module is most sensitive to the ambient humidity is generally used to detect the moisture content of the soil. 
+2. Module to reach the threshold value is set in the soil moisture, DO port output high, when the the soil humidity exceeds a set threshold value, the module D0 output low; 
+3. The digital output D0 can be connected directly with the microcontroller to detect high and low by the microcontroller to detect soil moisture; 
+4. The digital outputs DO shop relay module can directly drive the buzzer module, which can form a soil moisture alarm equipment; 
+5. Analog output AO and AD module connected through the AD converter, you can get more precise values of soil moisture</p>
+
+<p><a href="http://www.ebay.com/itm/Soil-Hygrometer-Detection-Module-Soil-Moisture-Sensor-/281043772532?ssPageName=ADME:X:AAQ:US:1123">Link</a></p>
+
+<h3>
+<a name="humidity-and-temperature-sensor-dht11" class="anchor" href="#humidity-and-temperature-sensor-dht11"><span class="octicon octicon-link"></span></a>Humidity and Temperature Sensor (DHT11)</h3>
+
+<p><img src="https://raw.githubusercontent.com/solotsopa/ClimateChangeDetector/master/ClimateChangeDetector/images/DHT1.jpg" alt="Humidity"><br><br>
+DHT11 digital humidity temperature sensor is the composition sensor which contains calibrated digital output. It applies to specialized digital module, and collects technology and humidity &amp; temperature sensor technology. All of this can guarantee the product with extremely high reliability and excellent long-term stability.</p>
+
+<p>This sensor contains one resistance type moisture element and one NTC temperature-testing component, which connected to high-performance 8 pro SCM. Therefore, there are so many advantages below: high quality and excellent, extremely fast response, high antijamming capability. For each DHT11 sensor, it can calibrate in the extremely exact temperature check room. The calibration factor is stored in the OTP RAM in the form of procedural. When it tests processing of the signal inside the sensor, it needs to call the calibration factor. The single wire system port makes the system intergration simplier and faster. The excellent advantage like extreme minimum volume and ultralow energy consumption and the signal transmission distance up 20m or above, makes it become the best choice even under harshest application environment. Variously.</p>
+
+<p>It is 4 pin single row package. Convenient connecting, if you need the special package type, we can customize it per your requirement.</p>
+
+<p><a href="http://www.ebay.com/itm/2pcs-DHT11-Digital-Humidity-Temperature-Sensor-DHT11-NEW-/121347042442?pt=LH_DefaultDomain_0&amp;hash=item1c40d8ec8a">Link</a></p>
+
+<h3>
+<a name="photo-resistor" class="anchor" href="#photo-resistor"><span class="octicon octicon-link"></span></a>Photo Resistor</h3>
+
+<p><img src="https://raw.githubusercontent.com/solotsopa/ClimateChangeDetector/master/ClimateChangeDetector/images/photoresistor1.jpg" alt="Photoresistor"><br><br>
+Photoresistors are sensors that allow you to detect light. They are small, inexpensive, low-power, easy to use and don't wear out. For that reason they often appear in toys, gadgets and appliances. They are often referred to as CdS cells (they are made of Cadmium-Sulfide), light-dependent resistors (LDR), and photoresistors. Photocells are basically a resistor that changes its resistive value (in ohms Ω) depending on how much light is shining onto the squiggly face. They are very low cost, easy to get in many sizes and specifications, but are very innacurate. Each photocell sensor will act a little differently than the other, even if they are from the same batch. The variations can be really large, 50% or higher! For this reason, they shouldn't be used to try to determine precise light levels in lux or millicandela. Instead, you can expect to only be able to determine basic light changes.</p>
+
+<p><a href="http://www.ebay.com/itm/KY-018-photoresistor-module-for-Arduino-AVR-PIC-/121167420768?pt=LH_DefaultDomain_0&amp;hash=item1c36241d60">Link</a></p>
+
+<h3>
+<a name="about-code" class="anchor" href="#about-code"><span class="octicon octicon-link"></span></a>About Code</h3>
+
+<p>The code is targeted for the Arduino Yún and Arduino IDE 1.5.6-r2. </p>
+
+<ul>
+<li>It includes two header files (the DHT.h file is provided)<br><code>#include &lt;FileIO.h&gt;</code><br><code>#include "DHT.h"</code><br>
+</li>
+<li>You have to define the DHT pin that you have connected the Humidity-Temperature sensor and the type of your module.<br><code>#define DHTPIN 2</code><br><code>#define DHTTYPE DHT11</code><br>
+</li>
+<li>Initialise everything that you need to<br><code>Bridge.begin();</code><br><code>Serial.begin(9600);</code><br><code>FileSystem.begin();</code><br><code>dht.begin();</code><br>
+</li>
+<li>Read all analog values in a for loop and save them in a string variable<br><code>for (int analogPin = 0; analogPin &lt; 3; analogPin++) {</code><br><code>int sensor = analogRead(analogPin);</code><br><code>dataString += String(sensor);</code><br><code>if (analogPin &lt; 2) {</code><br><code>dataString += ",";</code><br><code>}</code><br><code>}</code><br>
+</li>
+<li>Write the values in a txt file in the SD card <br><code>File dataFile = FileSystem.open("/mnt/sd/datalog.txt", FILE_APPEND);</code><br><code>if (dataFile) {</code><br><code>dataFile.println(dataString);</code><br><code>dataFile.close();</code><br><code>}</code><br>
+</li>
+<li>The .txt file should look like this<br><code>05/22/14-16:44:20 = 979,979,465,59.00,27.00</code><br><code>05/22/14-16:44:26 = 970,560,477,58.00,27.00</code><br><code>05/22/14-16:44:32 = 979,560,469,58.00,27.00</code><br><code>05/22/14-16:44:37 = 330,560,450,58.00,27.00</code><br><code>05/22/14-16:44:43 = 329,562,456,58.00,27.00</code><br><code>05/22/14-16:44:49 = 328,563,456,58.00,27.00</code><br>
+</li>
+</ul><h3>
+<a name="about-climate-change" class="anchor" href="#about-climate-change"><span class="octicon octicon-link"></span></a>About Climate Change</h3>
+
+<p>Climate is usually defined as the “average weather” in a place. It includes patterns of temperature, precipitation (rain or snow), humidity, wind and seasons. Climate patterns play a fundamental role in shaping natural ecosystems, and the human economies and cultures that depend on them. But the climate we’ve come to expect is not what it used to be, because the past is no longer a reliable predictor of the future. Our climate is rapidly changing with disruptive impacts, and that change is progressing faster than any seen in the last 2,000 years. Because so many systems are tied to climate, a change in climate can affect many related aspects of where and how people, plants and animals live, such as food production, availability and use of water, and health risks. For example, a change in the usual timing of rains or temperatures can affect when plants bloom and set fruit, when insects hatch or when streams are their fullest. This can affect historically synchronized pollination of crops, food for migrating birds, spawning of fish, water supplies for drinking and irrigation, forest health, and more.Some short-term climate variation is normal, but longer-term trends now indicate a changing climate.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>The device and the code are created from <a href="https://github.com/solotsopa" class="user-mention">@solotsopa</a> (Apostolos Siokas)</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/solotsopa">solotsopa</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

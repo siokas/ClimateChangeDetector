@@ -8,11 +8,6 @@ Climate Change Detector is a school project device that reads values from five s
 
 ...and saves the data into an SD card. This project is created for an Ecology class and it is detecting the climate change in a specific time.
 
-***
-## The device
-![Device1](https://raw.githubusercontent.com/solotsopa/ClimateChangeDetector/master/ClimateChangeDetector/images/2014-05-26%2023.18.00.jpg)
-![Device2](https://raw.githubusercontent.com/solotsopa/ClimateChangeDetector/master/ClimateChangeDetector/images/2014-05-26%2023.56.40.jpg)
-For more pictures of the device click [here](https://www.dropbox.com/sc/i2rn7snet4gc9v5/AACJ15deyablcTFKXZu64FE3a)
 
 ***
 
